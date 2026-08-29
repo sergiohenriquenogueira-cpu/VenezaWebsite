@@ -1,0 +1,13 @@
+# Arquivos que ficam no repositório mas NÃO são publicados no site.
+
+# Documentação interna do projeto
+spec.md
+dados.md
+
+# Referência de terceiros (redundante com .gitignore)
+Referencia/
+referencia/
+
+# Sistema operacional
+.DS_Store
+**/.DS_Store

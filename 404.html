@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 – Página não encontrada</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=Inter:wght@400;500;600&display=swap">
+
+  <style>
+    :root {
+      --color-01: #050507;
+      --color-02: #FF8D28;
+      --color-02-hover: #E67E12;
+      --color-03: #FFFFFF;
+      --color-04: #909090;
+      --font-display: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+      --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #ffffff;
+      font-family: var(--font-primary);
+      color: var(--color-01);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 24px;
+    }
+
+    .error-code {
+      font-family: var(--font-display);
+      font-size: 200px;
+      font-weight: 600;
+      line-height: 1;
+      color: var(--color-01);
+      letter-spacing: -0.04em;
+      margin-bottom: 32px;
+    }
+
+    .message {
+      font-size: 16px;
+      color: var(--color-04);
+      margin-bottom: 32px;
+      line-height: 1.5;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background-color: var(--color-03);
+      color: var(--color-01);
+      border: 1px solid #E7E7E7;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 16px 28px;
+      border-radius: 8px;
+      transition: background-color 0.15s ease, color 0.15s ease;
+    }
+
+    .btn:hover {
+      background-color: var(--color-02);
+      color: var(--color-03);
+      border-color: var(--color-02);
+    }
+
+    /* ── MOBILE ── */
+    @media (max-width: 768px) {
+      body {
+        align-items: flex-start;
+      }
+
+      .wrapper {
+        padding-top: 80px;
+      }
+
+      .error-code {
+        font-size: 140px;
+        letter-spacing: -4px;
+        margin-bottom: 28px;
+      }
+
+      .message {
+        font-size: 17px;
+        max-width: 280px;
+        margin-bottom: 28px;
+      }
+
+      .btn {
+        font-size: 16px;
+        padding: 16px 36px;
+      }
+    }
+
+    @media (max-width: 375px) {
+      .error-code {
+        font-size: 110px;
+        letter-spacing: -3px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <p class="error-code">4Ø4</p>
+    <p class="message">A página que você está procurando não existe ou foi excluída.</p>
+    <a href="index.html" class="btn">← Voltar ao início</a>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+# --- Sistema operacional / editor ---
+.DS_Store
+**/.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Claude Code ---
+.claude/
+
+# --- Vercel ---
+.vercel/
+
+# --- Dependências (caso apareçam no futuro) ---
+node_modules/
+
+# --- Referência de terceiros ---
+# Export Framer do site da Bolfe, usado só como referência de design durante
+# o desenvolvimento. Não versionar nem publicar (é site de terceiro).
+Referencia/
+referencia/
