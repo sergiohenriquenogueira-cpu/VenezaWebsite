@@ -3,524 +3,768 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Imóveis a preço de custo em Ourinhos/SP | Invista direto na obra</title>
-  <meta name="description" content="Invista em imóveis na planta em Ourinhos/SP pelo modelo a preço de custo, com fluxo de caixa aberto, obra auditada e sem pagar a margem da incorporadora.">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Imóveis a preço de custo em Ourinhos/SP | Invista direto na obra">
-  <meta property="og:description" content="Invista em imóveis na planta em Ourinhos/SP pelo modelo a preço de custo, com fluxo de caixa aberto, obra auditada e sem pagar a margem da incorporadora.">
+  <!-- Versão de aprovação: não indexar no Google. Remover esta linha ao publicar no endereço oficial. -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>Veneza Incorporadora | Ourinhos</title>
+  <meta name="description" content="Veneza Incorporadora e Construtora: empreendimentos em Ourinhos desde 2009. Conheça o Residencial Veneza e as informações da apresentação de investimento 2026.">
+  <meta name="theme-color" content="#1A2922">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
-  <!-- canonical / og:url / og:image: adicionar quando a URL de produção estiver definida (dados.md) -->
+  <meta property="og:title" content="Veneza Incorporadora e Construtora">
+  <meta property="og:description" content="Arquitetura, amplitude e natureza em uma nova forma de viver Ourinhos.">
 
-  <link rel="icon" href="img/Favicon.png">
-
-  <!-- Preload do poster do vídeo do hero -->
-  <link rel="preload" href="img/Hero.png" as="image" fetchpriority="high">
-
-  <!-- Preload CSS -->
-  <link rel="preload" href="style.css" as="style">
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Google Fonts não-bloqueante — IBM Plex Sans (títulos) + Inter (corpo/UI) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" as="style">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=Inter:wght@400;500;600&display=swap"></noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap">
+  <link rel="preload" as="image" href="img/hero-01.jpg">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ============ HERO ============ -->
-  <section class="hero" id="hero">
-    <video class="hero__bg" aria-hidden="true" autoplay muted loop playsinline preload="metadata"
-           poster="img/Hero.png" width="1920" height="1018">
-      <source src="img/hero-bg.mp4" type="video/mp4">
-    </video>
-    <div class="hero__overlay" aria-hidden="true"></div>
+  <!-- ============ MENU ============ -->
+  <header class="header" id="topo">
+    <div class="header__inner">
+      <a class="header__brand" href="#topo" aria-label="Veneza Incorporadora e Construtora — início">
+        <img class="header__mark" src="img/logo-v.png" alt="" width="110" height="96">
+        <span class="header__brand-text">
+          <img class="header__logo" src="img/logo-veneza.png" alt="Veneza" width="440" height="65">
+          <span class="header__brand-sub">Incorporadora e Construtora</span>
+        </span>
+      </a>
 
-    <header class="hero__topbar">
-      <div class="hero__topbar-inner">
-        <img class="hero__topbar-logo" src="img/hero__topbar-logo.svg" alt="Veneza" width="43" height="56">
-        <span class="hero__topbar-brand">Veneza Incorporadora e Construtora</span>
-      </div>
-    </header>
+      <nav class="header__nav" id="menu" aria-label="Menu principal">
+        <a href="#a-veneza">A Veneza</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#residencial">Residencial</a>
+        <a href="#investimento">Investimento</a>
+        <a href="#ourinhos">Ourinhos</a>
+        <a class="btn btn--gold header__cta-mobile" href="https://wa.me/5511996948833?text=Ol%C3%A1%2C%20gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20investimentos%20em%20im%C3%B3veis%20na%20planta" target="_blank" rel="noopener">
+          Fale com a Veneza <span class="btn__icon" aria-hidden="true">↗</span>
+        </a>
+      </nav>
 
-    <div class="hero__content">
-      <div class="hero__intro">
-        <p class="hero__eyebrow">
-          <img class="hero__eyebrow-icon" src="img/hero__topbar-logo.svg" alt="" width="32" height="42">
-          <span class="hero__eyebrow-text">EM OURINHOS DESDE 2009</span>
-        </p>
-        <div class="hero__headline">
-          <h1 class="hero__title">Invista em imóveis na planta em Ourinhos/SP sem pagar a margem da incorporadora</h1>
-          <p class="hero__description">No modelo a preço de custo, você financia a obra diretamente e fica com o lucro que normalmente vai para a incorporadora, com fluxo de caixa aberto e auditado.</p>
-        </div>
-      </div>
+      <a class="btn btn--gold btn--sm header__cta" href="https://wa.me/5511996948833?text=Ol%C3%A1%2C%20gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20investimentos%20em%20im%C3%B3veis%20na%20planta" target="_blank" rel="noopener">
+        Fale com a Veneza <span class="btn__icon" aria-hidden="true">↗</span>
+      </a>
 
-      <div class="hero__stats">
-        <div class="hero__stats-image">
-          <img src="img/hero__content.png" alt="" width="104" height="104" decoding="async">
-        </div>
-        <div class="hero__stats-list">
-          <div class="hero__stat">
-            <span class="hero__stat-value" data-count-to="450" data-count-suffix="+">450+</span>
-            <span class="hero__stat-label">Cotas Comercializadas</span>
-          </div>
-          <div class="hero__stat">
-            <span class="hero__stat-value" data-count-to="90" data-count-suffix=" mil">90 mil</span>
-            <span class="hero__stat-label">M² construídos</span>
-          </div>
-          <div class="hero__stat">
-            <span class="hero__stat-value" data-count-to="300" data-count-suffix="+">300+</span>
-            <span class="hero__stat-label">Investidores</span>
-          </div>
-        </div>
-      </div>
+      <button class="header__toggle" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+        <span></span><span></span>
+      </button>
     </div>
-  </section>
+  </header>
 
   <main>
+    <!-- ============ SEÇÃO 1 — HERO ============ -->
+    <section class="hero" id="inicio" aria-label="Residencial Veneza">
+      <div class="hero__slides" aria-hidden="true">
+        <img class="hero__slide is-active" src="img/hero-01.jpg" alt="" fetchpriority="high">
+        <img class="hero__slide" src="img/hero-02.jpg" alt="" loading="lazy">
+        <img class="hero__slide" src="img/hero-03.jpg" alt="" loading="lazy">
+      </div>
+      <div class="hero__shade" aria-hidden="true"></div>
 
-    <!-- ============ INVESTIDOR TRADICIONAL ============ -->
-    <section class="investidor-tradicional" id="investidor-tradicional">
-      <div class="investidor-tradicional__inner">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow eyebrow--light">
+            Ourinhos · São Paulo <span class="eyebrow__sep">|</span> Nova Ourinhos
+          </p>
 
-        <div class="investidor-tradicional__intro">
-          <h2 class="investidor-tradicional__title">O investidor tradicional financia o lucro de outra pessoa</h2>
-          <div class="investidor-tradicional__intro-text">
-            <p class="investidor-tradicional__description">Comprar na planta a preço de tabela significa pagar, dentro do valor do imóvel, a margem de lucro da incorporadora. Fundos imobiliários e renda fixa entregam retorno previsível, mas limitado. Falta transparência sobre o que realmente acontece com o dinheiro investido durante a obra.</p>
+          <h1 class="hero__title">
+            Um novo marco<br>
+            para <em>Ourinhos</em>
+          </h1>
+
+          <p class="hero__lead">Arquitetura, amplitude e natureza em uma nova forma de viver a cidade.</p>
+
+          <div class="hero__actions">
+            <a class="btn btn--gold" href="#residencial">
+              Conheça o Residencial <span class="btn__icon" aria-hidden="true">→</span>
+            </a>
           </div>
         </div>
 
-        <div class="investidor-tradicional__card">
-          <div class="investidor-tradicional__card-content">
+        <aside class="hero__tag" aria-hidden="true">
+          <span class="hero__tag-name">Residencial<br>Veneza</span>
+          <span class="hero__tag-line"></span>
+          <span class="hero__tag-area">182–364 m²</span>
+        </aside>
 
-            <div class="investidor-tradicional__card-image">
-              <img src="img/investidor-tradicional__card-content.png" alt="Vista aérea de um empreendimento da Veneza" width="858" height="772" loading="lazy" decoding="async">
-            </div>
-
-            <div class="investidor-tradicional__card-body">
-
-              <div class="investidor-tradicional__card-header">
-                <span class="investidor-tradicional__badge">Vantagens reais</span>
-                <h3 class="investidor-tradicional__card-title">Investimento a Preço de Custo:</h3>
-              </div>
-
-              <div class="investidor-tradicional__benefits">
-                <div class="investidor-tradicional__benefit">
-                  <svg class="investidor-tradicional__benefit-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                    <path d="M8.91 19.92 15.43 13.4c.77-.77.77-2.03 0-2.8L8.91 4.08" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                  <div class="investidor-tradicional__benefit-text">
-                    <h4 class="investidor-tradicional__benefit-title">Economia Real</h4>
-                    <p class="investidor-tradicional__benefit-description">Imóvel adquirido por valor abaixo do preço final de mercado, sem a margem de lucro de uma incorporadora tradicional.</p>
-                  </div>
-                </div>
-
-                <hr class="investidor-tradicional__benefit-divider">
-
-                <div class="investidor-tradicional__benefit">
-                  <svg class="investidor-tradicional__benefit-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                    <path d="M8.91 19.92 15.43 13.4c.77-.77.77-2.03 0-2.8L8.91 4.08" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                  <div class="investidor-tradicional__benefit-text">
-                    <h4 class="investidor-tradicional__benefit-title">Transparência</h4>
-                    <p class="investidor-tradicional__benefit-description">Fluxo de caixa e custos da obra abertos e auditados pela empresa e comissão de investidores.</p>
-                  </div>
-                </div>
-
-                <hr class="investidor-tradicional__benefit-divider">
-
-                <div class="investidor-tradicional__benefit">
-                  <svg class="investidor-tradicional__benefit-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                    <path d="M8.91 19.92 15.43 13.4c.77-.77.77-2.03 0-2.8L8.91 4.08" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                  <div class="investidor-tradicional__benefit-text">
-                    <h4 class="investidor-tradicional__benefit-title">Potencial de Valorização</h4>
-                    <p class="investidor-tradicional__benefit-description">Histórico de valorização patrimonial ao longo da obra, com dados de empreendimentos já entregues disponíveis no material completo.</p>
-                  </div>
-                </div>
-              </div>
-
-              <a class="investidor-tradicional__button--secondary"
-                 href="material/veneza-investimento-2026.pdf" download target="_blank" rel="noopener"
-                 aria-label="Baixar material completo (PDF, 3,2 MB)">
-                <span class="investidor-tradicional__button-label">
-                  <span>Baixar material completo</span>
-                  <span aria-hidden="true">Baixar material completo</span>
-                </span>
-                <span class="investidor-tradicional__button-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none">
-                    <path d="M8.91 19.92 15.43 13.4c.77-.77.77-2.03 0-2.8L8.91 4.08" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                  <svg viewBox="0 0 24 24" fill="none">
-                    <path d="M8.91 19.92 15.43 13.4c.77-.77.77-2.03 0-2.8L8.91 4.08" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </span>
-              </a>
-
-            </div>
+        <div class="hero__bottom">
+          <div class="hero__counter" aria-hidden="true">
+            <span class="hero__counter-current">01</span>
+            <span class="hero__counter-track"><span class="hero__counter-bar"></span></span>
+            <span class="hero__counter-total">03</span>
           </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ============ ENTREGUES E ANDAMENTO ============ -->
-    <section class="entregues-e-andamento" id="entregues-e-andamento">
-
-      <div class="entregues-e-andamento__inner">
-        <div class="entregues-e-andamento__header">
-          <h2 class="entregues-e-andamento__title">Empreendimentos entregues e em andamento</h2>
-        </div>
-      </div>
-
-      <!-- Viewport do carrossel: começa alinhado ao grid, mas o track continua p/ fora à direita -->
-      <div class="entregues-e-andamento__list" role="region" aria-roledescription="carrossel"
-           aria-label="Empreendimentos entregues e em andamento" tabindex="0">
-        <div class="entregues-e-andamento__track">
-
-          <article class="entregues-e-andamento__card">
-            <div class="entregues-e-andamento__card-image">
-              <img class="entregues-e-andamento__card-image-photo" src="img/entregues-e-andamento__card-image-photo.png" alt="Edifício Toscana" width="520" height="600" loading="lazy" decoding="async">
-              <span class="entregues-e-andamento__card-status">
-                <span class="entregues-e-andamento__card-status-label">ENTREGUE 100%</span>
-              </span>
-            </div>
-            <div class="entregues-e-andamento__card-info">
-              <div class="entregues-e-andamento__card-info-text">
-                  <h3 class="entregues-e-andamento__card-name">Edifício Toscana</h3>
-                <div class="entregues-e-andamento__card-meta-row">
-                  <svg class="entregues-e-andamento__card-meta-icon" viewBox="0 0 40 40" aria-hidden="true">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3275 2.99984C6.26954 2.99984 2.99954 6.46584 2.99954 11.8318V28.1679C2.99954 33.5339 6.26954 36.9999 11.3275 36.9999H28.6636C33.7276 36.9999 36.9996 33.5339 36.9996 28.1679V11.8318C36.9996 6.46584 33.7276 2.99984 28.6676 2.99984H11.3275ZM28.664 40H11.328C4.552 40 0 35.244 0 28.168V11.832C0 4.756 4.552 0 11.328 0H28.668C35.446 0 40 4.756 40 11.832V28.168C40 35.244 35.446 40 28.664 40V40Z" fill="currentColor"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6775 17.7972C12.4575 17.7972 11.4695 18.7852 11.4695 20.0012C11.4695 21.2172 12.4575 22.2052 13.6735 22.2052C14.8875 22.2052 15.8775 21.2172 15.8775 20.0012C15.8775 18.7872 14.8895 17.7992 13.6775 17.7972M13.674 25.2049C10.804 25.2049 8.46997 22.8689 8.46997 20.0009C8.46997 17.1309 10.804 14.7969 13.674 14.7969C16.548 14.7989 18.878 17.1329 18.878 20.0009C18.878 22.8689 16.544 25.2049 13.674 25.2049" fill="currentColor"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.0194 25.2048C29.1914 25.2048 28.5194 24.5328 28.5194 23.7048V21.4988H17.3834C16.5554 21.4988 15.8834 20.8288 15.8834 19.9988C15.8834 19.1708 16.5554 18.4988 17.3834 18.4988H30.0194C30.8474 18.4988 31.5194 19.1708 31.5194 19.9988V23.7048C31.5194 24.5328 30.8474 25.2048 30.0194 25.2048" fill="currentColor"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.363 25.2048C23.535 25.2048 22.863 24.5328 22.863 23.7048V19.9988C22.863 19.1708 23.535 18.4988 24.363 18.4988C25.191 18.4988 25.863 19.1708 25.863 19.9988V23.7048C25.863 24.5328 25.191 25.2048 24.363 25.2048" fill="currentColor"/>
-                  </svg>
-                  <span class="entregues-e-andamento__card-units">40 Unidades</span>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="entregues-e-andamento__card">
-            <div class="entregues-e-andamento__card-image">
-              <img class="entregues-e-andamento__card-image-photo" src="img/entregues-e-andamento__card-image-photo2.png" alt="Edifício Villa Di Capri" width="520" height="600" loading="lazy" decoding="async">
-              <span class="entregues-e-andamento__card-status">
-                <span class="entregues-e-andamento__card-status-label">ENTREGUE 100%</span>
-              </span>
-            </div>
-            <div class="entregues-e-andamento__card-info">
-              <div class="entregues-e-andamento__card-info-text">
-                  <h3 class="entregues-e-andamento__card-name">Edifício Villa Di Capri</h3>
-                <div class="entregues-e-andamento__card-meta-row">
-                  <svg class="entregues-e-andamento__card-meta-icon" viewBox="0 0 40 40" aria-hidden="true">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3275 2.99984C6.26954 2.99984 2.99954 6.46584 2.99954 11.8318V28.1679C2.99954 33.5339 6.26954 36.9999 11.3275 36.9999H28.6636C33.7276 36.9999 36.9996 33.5339 36.9996 28.1679V11.8318C36.9996 6.46584 33.7276 2.99984 28.6676 2.99984H11.3275ZM28.664 40H11.328C4.552 40 0 35.244 0 28.168V11.832C0 4.756 4.552 0 11.328 0H28.668C35.446 0 40 4.756 40 11.832V28.168C40 35.244 35.446 40 28.664 40V40Z" fill="currentColor"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6775 17.7972C12.4575 17.7972 11.4695 18.7852 11.4695 20.0012C11.4695 21.2172 12.4575 22.2052 13.6735 22.2052C14.8875 22.2052 15.8775 21.2172 15.8775 20.0012C15.8775 18.7872 14.8895 17.7992 13.6775 17.7972M13.674 25.2049C10.804 25.2049 8.46997 22.8689 8.46997 20.0009C8.46997 17.1309 10.804 14.7969 13.674 14.7969C16.548 14.7989 18.878 17.1329 18.878 20.0009C18.878 22.8689 16.544 25.2049 13.674 25.2049" fill="currentColor"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.0194 25.2048C29.1914 25.2048 28.5194 24.5328 28.5194 23.7048V21.4988H17.3834C16.5554 21.4988 15.8834 20.8288 15.8834 19.9988C15.8834 19.1708 16.5554 18.4988 17.3834 18.4988H30.0194C30.8474 18.4988 31.5194 19.1708 31.5194 19.9988V23.7048C31.5194 24.5328 30.8474 25.2048 30.0194 25.2048" fill="currentColor"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.363 25.2048C23.535 25.2048 22.863 24.5328 22.863 23.7048V19.9988C22.863 19.1708 23.535 18.4988 24.363 18.4988C25.191 18.4988 25.863 19.1708 25.863 19.9988V23.7048C25.863 24.5328 25.191 25.2048 24.363 25.2048" fill="currentColor"/>
-                  </svg>
-                  <span class="entregues-e-andamento__card-units">128 Unidades</span>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="entregues-e-andamento__card">
-            <div class="entregues-e-andamento__card-image">
-              <img class="entregues-e-andamento__card-image-photo" src="img/entregues-e-andamento__card-image-photo3.png" alt="Edifício Florença" width="520" height="600" loading="lazy" decoding="async">
-              <span class="entregues-e-andamento__card-status">
-                <span class="entregues-e-andamento__card-status-label">ENTREGUE 100%</span>
-              </span>
-            </div>
-            <div class="entregues-e-andamento__card-info">
-              <div class="entregues-e-andamento__card-info-text">
-                  <h3 class="entregues-e-andamento__card-name">Edifício Florença</h3>
-                <div class="entregues-e-andamento__card-meta-row">
-                  <svg class="entregues-e-andamento__card-meta-icon" viewBox="0 0 40 40" aria-hidden="true">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3275 2.99984C6.26954 2.99984 2.99954 6.46584 2.99954 11.8318V28.1679C2.99954 33.5339 6.26954 36.9999 11.3275 36.9999H28.6636C33.7276 36.9999 36.9996 33.5339 36.9996 28.1679V11.8318C36.9996 6.46584 33.7276 2.99984 28.6676 2.99984H11.3275ZM28.664 40H11.328C4.552 40 0 35.244 0 28.168V11.832C0 4.756 4.552 0 11.328 0H28.668C35.446 0 40 4.756 40 11.832V28.168C40 35.244 35.446 40 28.664 40V40Z" fill="currentColor"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6775 17.7972C12.4575 17.7972 11.4695 18.7852 11.4695 20.0012C11.4695 21.2172 12.4575 22.2052 13.6735 22.2052C14.8875 22.2052 15.8775 21.2172 15.8775 20.0012C15.8775 18.7872 14.8895 17.7992 13.6775 17.7972M13.674 25.2049C10.804 25.2049 8.46997 22.8689 8.46997 20.0009C8.46997 17.1309 10.804 14.7969 13.674 14.7969C16.548 14.7989 18.878 17.1329 18.878 20.0009C18.878 22.8689 16.544 25.2049 13.674 25.2049" fill="currentColor"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.0194 25.2048C29.1914 25.2048 28.5194 24.5328 28.5194 23.7048V21.4988H17.3834C16.5554 21.4988 15.8834 20.8288 15.8834 19.9988C15.8834 19.1708 16.5554 18.4988 17.3834 18.4988H30.0194C30.8474 18.4988 31.5194 19.1708 31.5194 19.9988V23.7048C31.5194 24.5328 30.8474 25.2048 30.0194 25.2048" fill="currentColor"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.363 25.2048C23.535 25.2048 22.863 24.5328 22.863 23.7048V19.9988C22.863 19.1708 23.535 18.4988 24.363 18.4988C25.191 18.4988 25.863 19.1708 25.863 19.9988V23.7048C25.863 24.5328 25.191 25.2048 24.363 25.2048" fill="currentColor"/>
-                  </svg>
-                  <span class="entregues-e-andamento__card-units">80 Unidades</span>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="entregues-e-andamento__card">
-            <div class="entregues-e-andamento__card-image">
-              <img class="entregues-e-andamento__card-image-photo" src="img/entregues-e-andamento__card-image-photo4.png" alt="Edifício Monte Carlo" width="520" height="600" loading="lazy" decoding="async">
-              <span class="entregues-e-andamento__card-status">
-                <span class="entregues-e-andamento__card-status-label">EM ACABAMENTO 90%</span>
-              </span>
-            </div>
-            <div class="entregues-e-andamento__card-info">
-              <div class="entregues-e-andamento__card-info-text">
-                  <h3 class="entregues-e-andamento__card-name">Edifício Monte Carlo</h3>
-                <div class="entregues-e-andamento__card-meta-row">
-                  <svg class="entregues-e-andamento__card-meta-icon" viewBox="0 0 40 40" aria-hidden="true">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3275 2.99984C6.26954 2.99984 2.99954 6.46584 2.99954 11.8318V28.1679C2.99954 33.5339 6.26954 36.9999 11.3275 36.9999H28.6636C33.7276 36.9999 36.9996 33.5339 36.9996 28.1679V11.8318C36.9996 6.46584 33.7276 2.99984 28.6676 2.99984H11.3275ZM28.664 40H11.328C4.552 40 0 35.244 0 28.168V11.832C0 4.756 4.552 0 11.328 0H28.668C35.446 0 40 4.756 40 11.832V28.168C40 35.244 35.446 40 28.664 40V40Z" fill="currentColor"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6775 17.7972C12.4575 17.7972 11.4695 18.7852 11.4695 20.0012C11.4695 21.2172 12.4575 22.2052 13.6735 22.2052C14.8875 22.2052 15.8775 21.2172 15.8775 20.0012C15.8775 18.7872 14.8895 17.7992 13.6775 17.7972M13.674 25.2049C10.804 25.2049 8.46997 22.8689 8.46997 20.0009C8.46997 17.1309 10.804 14.7969 13.674 14.7969C16.548 14.7989 18.878 17.1329 18.878 20.0009C18.878 22.8689 16.544 25.2049 13.674 25.2049" fill="currentColor"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.0194 25.2048C29.1914 25.2048 28.5194 24.5328 28.5194 23.7048V21.4988H17.3834C16.5554 21.4988 15.8834 20.8288 15.8834 19.9988C15.8834 19.1708 16.5554 18.4988 17.3834 18.4988H30.0194C30.8474 18.4988 31.5194 19.1708 31.5194 19.9988V23.7048C31.5194 24.5328 30.8474 25.2048 30.0194 25.2048" fill="currentColor"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.363 25.2048C23.535 25.2048 22.863 24.5328 22.863 23.7048V19.9988C22.863 19.1708 23.535 18.4988 24.363 18.4988C25.191 18.4988 25.863 19.1708 25.863 19.9988V23.7048C25.863 24.5328 25.191 25.2048 24.363 25.2048" fill="currentColor"/>
-                  </svg>
-                  <span class="entregues-e-andamento__card-units">80 Unidades</span>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="entregues-e-andamento__card">
-            <div class="entregues-e-andamento__card-image">
-              <img class="entregues-e-andamento__card-image-photo" src="img/entregues-e-andamento__card-image-photo5.png" alt="Edifício Veneza" width="520" height="600" loading="lazy" decoding="async">
-              <span class="entregues-e-andamento__card-status">
-                <span class="entregues-e-andamento__card-status-label">INÍCIO LAGE 1 20%</span>
-              </span>
-            </div>
-            <div class="entregues-e-andamento__card-info">
-              <div class="entregues-e-andamento__card-info-text">
-                  <h3 class="entregues-e-andamento__card-name">Edifício Veneza</h3>
-                <div class="entregues-e-andamento__card-meta-row">
-                  <svg class="entregues-e-andamento__card-meta-icon" viewBox="0 0 40 40" aria-hidden="true">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3275 2.99984C6.26954 2.99984 2.99954 6.46584 2.99954 11.8318V28.1679C2.99954 33.5339 6.26954 36.9999 11.3275 36.9999H28.6636C33.7276 36.9999 36.9996 33.5339 36.9996 28.1679V11.8318C36.9996 6.46584 33.7276 2.99984 28.6676 2.99984H11.3275ZM28.664 40H11.328C4.552 40 0 35.244 0 28.168V11.832C0 4.756 4.552 0 11.328 0H28.668C35.446 0 40 4.756 40 11.832V28.168C40 35.244 35.446 40 28.664 40V40Z" fill="currentColor"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6775 17.7972C12.4575 17.7972 11.4695 18.7852 11.4695 20.0012C11.4695 21.2172 12.4575 22.2052 13.6735 22.2052C14.8875 22.2052 15.8775 21.2172 15.8775 20.0012C15.8775 18.7872 14.8895 17.7992 13.6775 17.7972M13.674 25.2049C10.804 25.2049 8.46997 22.8689 8.46997 20.0009C8.46997 17.1309 10.804 14.7969 13.674 14.7969C16.548 14.7989 18.878 17.1329 18.878 20.0009C18.878 22.8689 16.544 25.2049 13.674 25.2049" fill="currentColor"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.0194 25.2048C29.1914 25.2048 28.5194 24.5328 28.5194 23.7048V21.4988H17.3834C16.5554 21.4988 15.8834 20.8288 15.8834 19.9988C15.8834 19.1708 16.5554 18.4988 17.3834 18.4988H30.0194C30.8474 18.4988 31.5194 19.1708 31.5194 19.9988V23.7048C31.5194 24.5328 30.8474 25.2048 30.0194 25.2048" fill="currentColor"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.363 25.2048C23.535 25.2048 22.863 24.5328 22.863 23.7048V19.9988C22.863 19.1708 23.535 18.4988 24.363 18.4988C25.191 18.4988 25.863 19.1708 25.863 19.9988V23.7048C25.863 24.5328 25.191 25.2048 24.363 25.2048" fill="currentColor"/>
-                  </svg>
-                  <span class="entregues-e-andamento__card-units">72 Unidades</span>
-                </div>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-
-      <div class="entregues-e-andamento__inner">
-        <div class="entregues-e-andamento__pagination">
-          <button type="button" class="entregues-e-andamento__pagination-prev" aria-label="Empreendimento anterior">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M8.91 19.92 15.43 13.4c.77-.77.77-2.03 0-2.8L8.91 4.08" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-          <button type="button" class="entregues-e-andamento__pagination-next" aria-label="Próximo empreendimento">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M8.91 19.92 15.43 13.4c.77-.77.77-2.03 0-2.8L8.91 4.08" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-          <!-- dots gerados dinamicamente pelo script.js conforme o nº de posições -->
-          <div class="entregues-e-andamento__pagination-progress"></div>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- ============ PASSO A PASSO ============ -->
-    <section class="passo-a-passo" id="passo-a-passo">
-      <div class="passo-a-passo__inner">
-
-        <div class="passo-a-passo__header">
-          <p class="passo-a-passo__title">É um processo de apenas 5 etapas</p>
-          <h2 class="passo-a-passo__subtitle">Passo a passo</h2>
-        </div>
-
-        <div class="passo-a-passo__steps">
-          <div class="passo-a-passo__steps-row">
-
-            <div class="passo-a-passo__step">
-              <div class="passo-a-passo__step-card">
-                <div class="passo-a-passo__step-icon">
-                  <img class="passo-a-passo__step-icon-glyph" src="img/passo-a-passo__step-icon-glyph.svg" alt="" width="48" height="48" loading="lazy" decoding="async">
-                </div>
-                <div class="passo-a-passo__step-text">
-                  <h3 class="passo-a-passo__step-title">Aquisição do Terreno</h3>
-                  <p class="passo-a-passo__step-description">Compra do local onde o empreendimento será erguido.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="passo-a-passo__step">
-              <div class="passo-a-passo__step-card">
-                <div class="passo-a-passo__step-icon">
-                  <img class="passo-a-passo__step-icon-glyph" src="img/passo-a-passo__step-icon-glyph1.svg" alt="" width="48" height="48" loading="lazy" decoding="async">
-                </div>
-                <div class="passo-a-passo__step-text">
-                  <h3 class="passo-a-passo__step-title">Formação do Grupo</h3>
-                  <p class="passo-a-passo__step-description">Investidores se unem para cotizar o projeto</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="passo-a-passo__step">
-              <div class="passo-a-passo__step-card">
-                <div class="passo-a-passo__step-icon">
-                  <img class="passo-a-passo__step-icon-glyph" src="img/passo-a-passo__step-icon-glyph2.svg" alt="" width="48" height="48" loading="lazy" decoding="async">
-                </div>
-                <div class="passo-a-passo__step-text">
-                  <h3 class="passo-a-passo__step-title">Aprovação e Projetos</h3>
-                  <p class="passo-a-passo__step-description">Validação da planta e das licenças legais.</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div class="passo-a-passo__steps-row">
-
-            <div class="passo-a-passo__step">
-              <div class="passo-a-passo__step-card">
-                <div class="passo-a-passo__step-icon">
-                  <img class="passo-a-passo__step-icon-glyph" src="img/passo-a-passo__step-icon-glyph3.svg" alt="" width="48" height="48" loading="lazy" decoding="async">
-                </div>
-                <div class="passo-a-passo__step-text">
-                  <h3 class="passo-a-passo__step-title">Aportes</h3>
-                  <p class="passo-a-passo__step-description">Parcelas mensais e balões anuais cobrem o custo real da obra.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="passo-a-passo__step">
-              <div class="passo-a-passo__step-card">
-                <div class="passo-a-passo__step-icon">
-                  <img class="passo-a-passo__step-icon-glyph" src="img/passo-a-passo__step-icon-glyph4.svg" alt="" width="48" height="48" loading="lazy" decoding="async">
-                </div>
-                <div class="passo-a-passo__step-text">
-                  <h3 class="passo-a-passo__step-title">Entrega das Chaves</h3>
-                  <p class="passo-a-passo__step-description">Divisão das unidades e realização do lucro.</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ============ HUB REGIONAL  (Figma 96:636) ============ -->
-    <section class="hub-regional" id="hub-regional">
-      <img class="hub-regional__bg" src="img/hub-regional__bg.png" alt="" width="1920" height="925" loading="lazy" decoding="async">
-      <div class="hub-regional__overlay" aria-hidden="true"></div>
-
-      <div class="hub-regional__intro">
-
-        <div class="hub-regional__intro-text">
-          <h2 class="hub-regional__title">O HUB regional que sustenta a tese de investimento</h2>
-
-          <a class="hub-regional__button--secondary"
-             href="material/veneza-investimento-2026.pdf" download target="_blank" rel="noopener"
-             aria-label="Baixar material completo (PDF, 3,2 MB)">
-            <span class="hub-regional__button-label">
-              <span>Baixar material completo</span>
-              <span aria-hidden="true">Baixar material completo</span>
-            </span>
-            <span class="hub-regional__button-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M8.91 19.92 15.43 13.4c.77-.77.77-2.03 0-2.8L8.91 4.08" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M8.91 19.92 15.43 13.4c.77-.77.77-2.03 0-2.8L8.91 4.08" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </span>
+          <a class="hero__scroll" href="#a-veneza">
+            Descubra <span aria-hidden="true">⌄</span>
           </a>
         </div>
+      </div>
+    </section>
 
-        <div class="hub-regional__card">
-          <div class="hub-regional__card-content">
-            <p class="hub-regional__card-description">Ourinhos consolida-se como uma das cidades mais promissoras do interior paulista, com influência sobre mais de <span class="hub-regional__count" data-count-to="20">20</span> municípios vizinhos.</p>
+    <!-- ============ SEÇÃO 2 — INDICADORES (carrossel) ============ -->
+    <section class="stats" id="indicadores" aria-labelledby="stats-title">
+      <div class="stats__head">
+        <div>
+          <p class="eyebrow">A Veneza em números</p>
+          <h2 class="stats__title" id="stats-title">Uma história construída<br> em Ourinhos</h2>
+        </div>
+      </div>
 
-            <div class="hub-regional__factors">
-              <div class="hub-regional__factors-inner">
-                <div class="hub-regional__factors-list">
+      <div class="marquee" data-marquee>
+        <ul class="marquee__track">
+          <li class="stat-card">
+            <svg class="stat-card__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M6 27V11l10-6 10 6v16M6 27h20M12 27v-7h8v7M11 14h2M19 14h2"/></svg>
+            <p class="stat-card__value"><span data-count="450" data-prefix="+">+450</span></p>
+            <p class="stat-card__label">Cotas comercializadas</p>
+            <p class="stat-card__text">Investidores que financiaram obras da Veneza pelo modelo a preço de custo.</p>
+          </li>
+          <li class="stat-card">
+            <svg class="stat-card__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 27h22M8 27V8h10v19M18 13h6v14M11 12h4M11 16h4M11 20h4M21 17h0M21 21h0"/></svg>
+            <p class="stat-card__value"><span data-count="90" data-prefix="+">+90</span> <small>mil m²</small></p>
+            <p class="stat-card__label">Área construída</p>
+            <p class="stat-card__text">Em empreendimentos entregues e em andamento em Ourinhos.</p>
+          </li>
+          <li class="stat-card">
+            <svg class="stat-card__icon" viewBox="0 0 32 32" aria-hidden="true"><circle cx="12" cy="11" r="4"/><path d="M4 26c0-4.4 3.6-8 8-8s8 3.6 8 8"/><circle cx="22.5" cy="12" r="3"/><path d="M21 18.2c.5-.1 1-.2 1.5-.2 3 0 5.5 2.5 5.5 5.5V26"/></svg>
+            <p class="stat-card__value"><span data-count="300" data-prefix="+">+300</span></p>
+            <p class="stat-card__label">Investidores</p>
+            <p class="stat-card__text">Pessoas que investem diretamente nas obras, com fluxo de caixa aberto.</p>
+          </li>
+          <li class="stat-card">
+            <svg class="stat-card__icon" viewBox="0 0 32 32" aria-hidden="true"><rect x="5" y="7" width="22" height="20"/><path d="M5 13h22M11 4v6M21 4v6"/></svg>
+            <p class="stat-card__value">2009</p>
+            <p class="stat-card__label">Em Ourinhos desde</p>
+            <p class="stat-card__text">Uma incorporadora nascida na cidade, com obras na cidade e na região.</p>
+          </li>
+          <li class="stat-card">
+            <svg class="stat-card__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 27h24M7 27V14h6v13M13 27V6h7v21M20 27V11h6v16"/></svg>
+            <p class="stat-card__value">05</p>
+            <p class="stat-card__label">Empreendimentos</p>
+            <p class="stat-card__text">Toscana, Villa Di Capri, Florença, Monte Carlo e o novo Veneza.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-                  <div class="hub-regional__factor">
-                    <svg class="hub-regional__factor-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                      <path d="M8.91 19.92 15.43 13.4c.77-.77.77-2.03 0-2.8L8.91 4.08" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <div class="hub-regional__factor-text">
-                      <h3 class="hub-regional__factor-title">IDH <span class="hub-regional__factor-value" data-count-to="0.778" data-count-decimals="3">0,778</span></h3>
-                      <p class="hub-regional__factor-description">qualidade de vida que atrai novas famílias e profissionais qualificados</p>
-                    </div>
-                  </div>
+    <!-- ============ SEÇÃO 3 — NOSSA HISTÓRIA ============ -->
+    <section class="history" id="a-veneza" aria-labelledby="history-title">
+      <div class="history__inner">
+        <figure class="history__media">
+          <video class="history__video" muted loop playsinline preload="none"
+                 poster="img/historia-poster.jpg" width="1280" height="720"
+                 aria-label="Equipe da Veneza trabalhando em uma obra ao pôr do sol">
+            <source src="video/historia.mp4" type="video/mp4">
+          </video>
+        </figure>
 
-                  <hr class="hub-regional__factor-divider">
+        <div class="history__content">
+          <p class="eyebrow">Nossa história</p>
+          <h2 class="history__title" id="history-title">Raízes locais.<br> Visão de futuro</h2>
+          <p class="history__text">Uma trajetória de construção. A Veneza Incorporadora e Construtora nasceu em Ourinhos. Desde 2009, transforma experiência em construção em projetos para a cidade e sua região.</p>
+          <a class="link-arrow history__link" href="#portfolio">
+            Conheça nosso portfólio <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-                  <div class="hub-regional__factor">
-                    <svg class="hub-regional__factor-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                      <path d="M8.91 19.92 15.43 13.4c.77-.77.77-2.03 0-2.8L8.91 4.08" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <div class="hub-regional__factor-text">
-                      <h3 class="hub-regional__factor-title">Crescimento habitacional acelerado</h3>
-                      <p class="hub-regional__factor-description">verticalização incipiente, curva demográfica em ascensão</p>
-                    </div>
-                  </div>
-
-                  <hr class="hub-regional__factor-divider">
-
-                  <div class="hub-regional__factor">
-                    <svg class="hub-regional__factor-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                      <path d="M8.91 19.92 15.43 13.4c.77-.77.77-2.03 0-2.8L8.91 4.08" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <div class="hub-regional__factor-text">
-                      <h3 class="hub-regional__factor-title">Polo educacional</h3>
-                      <p class="hub-regional__factor-description">UNESP, FATEC, Estácio e outras, atraindo milhares de jovens que movimentam locação e comércio</p>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
+    <!-- ============ SEÇÃO 4 — PORTFÓLIO ============ -->
+    <section class="portfolio" id="portfolio" aria-labelledby="portfolio-title">
+      <div class="portfolio__inner">
+        <div class="portfolio__head">
+          <div class="portfolio__intro">
+            <p class="eyebrow eyebrow--light">Portfólio</p>
+            <h2 class="portfolio__title" id="portfolio-title">Projetos que fazem<br> parte da paisagem</h2>
+            <p class="portfolio__lead">Empreendimentos apresentados pela Veneza em Ourinhos, em diferentes etapas e momentos.</p>
           </div>
         </div>
 
+        <div class="filters" role="group" aria-label="Filtrar empreendimentos por status">
+          <button class="filters__btn" type="button" data-filter="todos" aria-pressed="true">Todos <span class="filters__count">5</span></button>
+          <button class="filters__btn" type="button" data-filter="lancamento" aria-pressed="false">Lançamentos <span class="filters__count">1</span></button>
+          <button class="filters__btn" type="button" data-filter="construcao" aria-pressed="false">Em construção <span class="filters__count">2</span></button>
+          <button class="filters__btn" type="button" data-filter="concluido" aria-pressed="false">Concluídos <span class="filters__count">3</span></button>
+        </div>
+        <p class="visually-hidden" aria-live="polite" data-filter-status></p>
+
+        <ul class="works">
+          <li class="work" data-status="concluido">
+            <div class="work__media">
+              <img src="img/obra-toscana.jpg" alt="Edifício Toscana, prédio residencial branco entre palmeiras" width="800" height="879" loading="lazy">
+              <span class="work__index">01</span>
+              <span class="work__chips"><span class="chip">Concluído</span></span>
+            </div>
+            <div class="work__body">
+              <div class="work__meta">
+                <span class="work__units">40 unidades</span>
+                <span class="work__progress" style="--p: 100%">
+                  <span class="work__phase">Entregue</span><span class="work__pct">100%</span>
+                  <span class="work__bar" aria-hidden="true"><span></span></span>
+                </span>
+              </div>
+              <h3 class="work__name">Ed. Toscana</h3>
+            </div>
+          </li>
+
+          <li class="work" data-status="concluido">
+            <div class="work__media">
+              <img src="img/obra-villa-di-capri.jpg" alt="Condomínio Villa Di Capri, torre de tijolos aparentes com portaria" width="800" height="880" loading="lazy">
+              <span class="work__index">02</span>
+              <span class="work__chips"><span class="chip">Concluído</span></span>
+            </div>
+            <div class="work__body">
+              <div class="work__meta">
+                <span class="work__units">128 unidades</span>
+                <span class="work__progress" style="--p: 100%">
+                  <span class="work__phase">Entregue</span><span class="work__pct">100%</span>
+                  <span class="work__bar" aria-hidden="true"><span></span></span>
+                </span>
+              </div>
+              <h3 class="work__name">Ed. Villa Di Capri</h3>
+            </div>
+          </li>
+
+          <li class="work" data-status="concluido">
+            <div class="work__media">
+              <img src="img/obra-florenca.jpg" alt="Edifício Florença, torre alta contra o céu azul" width="480" height="528" loading="lazy">
+              <span class="work__index">03</span>
+              <span class="work__chips"><span class="chip">Concluído</span></span>
+            </div>
+            <div class="work__body">
+              <div class="work__meta">
+                <span class="work__units">80 unidades</span>
+                <span class="work__progress" style="--p: 100%">
+                  <span class="work__phase">Entregue</span><span class="work__pct">100%</span>
+                  <span class="work__bar" aria-hidden="true"><span></span></span>
+                </span>
+              </div>
+              <h3 class="work__name">Ed. Florença</h3>
+            </div>
+          </li>
+
+          <li class="work" data-status="construcao">
+            <div class="work__media">
+              <img src="img/obra-monte-carlo.jpg" alt="Edifício Monte Carlo em obra, estrutura concluída" width="800" height="880" loading="lazy">
+              <span class="work__index">04</span>
+              <span class="work__chips"><span class="chip">Em construção</span></span>
+            </div>
+            <div class="work__body">
+              <div class="work__meta">
+                <span class="work__units">80 unidades</span>
+                <span class="work__progress" style="--p: 90%">
+                  <span class="work__phase">Fase de acabamento</span><span class="work__pct">90%</span>
+                  <span class="work__bar" aria-hidden="true"><span></span></span>
+                </span>
+              </div>
+              <h3 class="work__name">Ed. Monte Carlo</h3>
+            </div>
+          </li>
+
+          <li class="work work--featured" data-status="lancamento construcao">
+            <a class="work__link" href="#residencial" aria-label="Ed. Veneza — conheça o Residencial Veneza"></a>
+            <div class="work__media">
+              <img src="img/obra-veneza.jpg" alt="Perspectiva do Residencial Veneza, torre com varandas e jardins" width="800" height="880" loading="lazy">
+              <span class="work__index">05</span>
+              <span class="work__chips"><span class="chip chip--gold">Lançamento</span><span class="chip">Em construção</span></span>
+            </div>
+            <div class="work__body">
+              <div class="work__meta">
+                <span class="work__units">72 unidades</span>
+                <span class="work__progress" style="--p: 20%">
+                  <span class="work__phase">Início da laje 1</span><span class="work__pct">20%</span>
+                  <span class="work__bar" aria-hidden="true"><span></span></span>
+                </span>
+              </div>
+              <h3 class="work__name">Ed. Veneza</h3>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SEÇÃO 5 — RESIDENCIAL VENEZA (faixa em movimento + Conheça) ============ -->
+    <section class="showcase" id="residencial" aria-labelledby="showcase-title">
+      <!-- 6a. Faixa com imagens em movimento, como um vídeo -->
+      <div class="reel">
+        <div class="reel__frames" aria-hidden="true">
+          <img class="reel__frame reel__frame--1" src="img/res-torre.jpg" alt="" loading="lazy">
+          <img class="reel__frame reel__frame--2" src="img/res-aerea.jpg" alt="" loading="lazy">
+          <img class="reel__frame reel__frame--3" src="img/res-piscina.jpg" alt="" loading="lazy">
+        </div>
+        <div class="reel__shade" aria-hidden="true"></div>
+
+        <div class="reel__content">
+          <div class="reel__logo" role="img" aria-label="Veneza Residencial">
+            <img class="reel__logo-v" src="img/logo-v-lg.png" alt="" width="276" height="240">
+            <img class="reel__logo-name" src="img/logo-veneza-lg.png" alt="" width="900" height="132">
+            <img class="reel__logo-sub" src="img/logo-residencial.png" alt="" width="560" height="46">
+          </div>
+          <p class="reel__chips">
+            <span class="chip chip--gold">Lançamento</span>
+            <span class="chip">Em construção</span>
+            <span class="chip">Unidades disponíveis</span>
+          </p>
+          <h2 class="reel__title" id="showcase-title">Requinte, exclusividade<br> e natureza</h2>
+        </div>
+      </div>
+
+      <!-- 6b. Conheça o Residencial Veneza (texto + perspectiva) -->
+      <div class="about">
+        <div class="about__text">
+          <p class="eyebrow">Sobre o projeto</p>
+          <h3 class="about__title">Conheça o Residencial Veneza</h3>
+          <p class="about__p">No coração de Nova Ourinhos, um projeto que aproxima a sofisticação do cotidiano e o verde da cidade.</p>
+          <p class="about__p">Um projeto de torre única, com espaços amplos, varanda gourmet e uma relação próxima com o verde, no bairro apresentado como o mais valorizado do município.</p>
+
+          <address class="res__address about__address">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+            <span class="about__addr">
+              <span class="about__addr-top">
+                <small>Nova Ourinhos</small>
+                <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Av.%20Jairo%20C.%20Cust%C3%B3dio%2C%20745%2C%20Nova%20Ourinhos%2C%20Ourinhos%20-%20SP" target="_blank" rel="noopener" aria-label="Ver mapa no Google Maps (abre em nova aba)">Ver mapa <span aria-hidden="true">→</span></a>
+              </span>
+              <span class="about__addr-street">Av. Jairo C. Custódio, 745</span>
+            </span>
+          </address>
+
+          <dl class="about__specs">
+            <div class="spec"><dt>Altura</dt><dd><strong>19</strong> pavimentos</dd></div>
+            <div class="spec"><dt>Exclusividade</dt><dd><strong>72</strong> unidades</dd></div>
+            <div class="spec"><dt>Amplitude</dt><dd><strong>182—364</strong> m² por unidade</dd></div>
+            <div class="spec"><dt>Garagem</dt><dd><strong>3—4</strong> vagas por unidade</dd></div>
+          </dl>
+
+          <ul class="about__facts">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 21V3h10v18M4 21h16M10 7h1M13 7h1M10 11h1M13 11h1M10 15h1M13 15h1"/></svg>Torre única</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11 12 4l8 7v9H4zM10 20v-6h4v6"/></svg>4 apartamentos por pavimento</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9h18M3 14h18M3 19h18M6 9V5h12v4"/></svg>Garagem em 3 subsolos</li>
+          </ul>
+
+          <div class="about__types">
+            <div class="about__type"><span>Apartamento tipo</span><strong>182 m²</strong><small>3 suítes e varanda gourmet</small></div>
+            <div class="about__type"><span>Cobertura duplex</span><strong>364 m²</strong><small>4 suítes e piscina privativa</small></div>
+          </div>
+        </div>
+
+        <figure class="about__media">
+          <img src="img/res-perspectiva-v.jpg" alt="Vista de cima do Residencial Veneza: piscina, deck e jardins ao pé da torre" width="600" height="900" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+
+    <!-- ============ SEÇÃO 6 — LAZER ============ -->
+    <section class="leisure" id="lazer" aria-labelledby="leisure-title">
+      <img class="leisure__mark" src="img/logo-v-lg.png" alt="" aria-hidden="true" width="276" height="240" loading="lazy">
+      <div class="leisure__inner">
+        <div class="leisure__intro">
+          <p class="eyebrow eyebrow--light">Viver bem</p>
+          <h2 class="leisure__title" id="leisure-title">O lazer encontra<br> o seu próprio ritmo</h2>
+          <p class="leisure__lead">Ambientes para receber, relaxar, brincar, treinar e aproveitar a natureza.</p>
+          <p class="leisure__total"><span class="leisure__total-num">14</span> <span class="leisure__total-label">Itens de lazer<br> no projeto</span></p>
+        </div>
+
+        <ol class="leisure__list" aria-label="Itens de lazer do Residencial Veneza">
+          <li class="leisure__item"><span class="leisure__num">01</span><span class="leisure__name">Salão de festas</span></li>
+          <li class="leisure__item"><span class="leisure__num">02</span><span class="leisure__name">Salão de jogos</span></li>
+          <li class="leisure__item"><span class="leisure__num">03</span><span class="leisure__name">Espaço gourmet</span></li>
+          <li class="leisure__item"><span class="leisure__num">04</span><span class="leisure__name">Coworking</span></li>
+          <li class="leisure__item"><span class="leisure__num">05</span><span class="leisure__name">Fire place</span></li>
+          <li class="leisure__item"><span class="leisure__num">06</span><span class="leisure__name">Brinquedoteca</span></li>
+          <li class="leisure__item"><span class="leisure__num">07</span><span class="leisure__name">Playground</span></li>
+          <li class="leisure__item"><span class="leisure__num">08</span><span class="leisure__name">Beach tennis</span></li>
+          <li class="leisure__item"><span class="leisure__num">09</span><span class="leisure__name">Espaço fitness</span></li>
+          <li class="leisure__item"><span class="leisure__num">10</span><span class="leisure__name">Piscina adulto com raia</span></li>
+          <li class="leisure__item"><span class="leisure__num">11</span><span class="leisure__name">Piscina infantil</span></li>
+          <li class="leisure__item"><span class="leisure__num">12</span><span class="leisure__name">Espelho d’água</span></li>
+          <li class="leisure__item"><span class="leisure__num">13</span><span class="leisure__name">Bosque e pomar</span></li>
+          <li class="leisure__item"><span class="leisure__num">14</span><span class="leisure__name">Espaço pet</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ SEÇÃO 7 — PLANTAS (acordeão, estilo Bolfe) ============ -->
+    <section class="plans" id="plantas" aria-labelledby="plans-title">
+      <div class="plans__inner">
+        <div class="plans__head">
+          <div>
+            <p class="eyebrow">Plantas</p>
+            <h2 class="plans__title" id="plans-title">Espaço para viver<br> do seu jeito</h2>
+            <p class="plans__lead">Plantas e imagens reproduzidas a partir da apresentação do empreendimento.</p>
+          </div>
+          <p class="plans__summary">Apartamentos tipo de <strong>182 m²</strong><br>Coberturas duplex de <strong>364 m²</strong></p>
+        </div>
+
+        <div class="plans__list">
+          <details class="plan" open>
+            <summary class="plan__summary">
+              <svg class="plan__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 15.5 15.5 3.5l5 5-12 12zM7 12l2 2M10 9l2 2M13 6l2 2"/></svg>
+              <span class="plan__name">Apartamento tipo <span class="plan__area">182 m²</span></span>
+              <span class="plan__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="plan__body">
+              <dl class="plan__info">
+                <div><dt>Área</dt><dd>182 m²</dd></div>
+                <div><dt>Suítes</dt><dd>3 suítes</dd></div>
+                <div><dt>Destaque</dt><dd>Varanda gourmet</dd></div>
+                <div><dt>Por andar</dt><dd>4 apartamentos</dd></div>
+              </dl>
+              <a class="plan__media" href="img/planta-apartamento-tipo.jpg" target="_blank" rel="noopener" aria-label="Abrir a planta do apartamento tipo em tamanho grande">
+                <img src="img/planta-apartamento-tipo.jpg" alt="Planta humanizada do apartamento tipo do Residencial Veneza, com 3 suítes, sala integrada, cozinha e varanda gourmet" width="1280" height="829" loading="lazy">
+              </a>
+            </div>
+          </details>
+
+          <details class="plan">
+            <summary class="plan__summary">
+              <svg class="plan__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 15.5 15.5 3.5l5 5-12 12zM7 12l2 2M10 9l2 2M13 6l2 2"/></svg>
+              <span class="plan__name">Pavimento tipo <span class="plan__area">4 apartamentos por andar</span></span>
+              <span class="plan__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="plan__body">
+              <dl class="plan__info">
+                <div><dt>Unidades</dt><dd>4 por pavimento</dd></div>
+                <div><dt>Torre</dt><dd>Única, com 19 pavimentos</dd></div>
+                <div><dt>Circulação</dt><dd>Hall social</dd></div>
+              </dl>
+              <a class="plan__media" href="img/planta-pavimento-tipo.jpg" target="_blank" rel="noopener" aria-label="Abrir a planta do pavimento tipo em tamanho grande">
+                <img src="img/planta-pavimento-tipo.jpg" alt="Planta do pavimento tipo do Residencial Veneza, com um apartamento destacado entre os quatro do andar" width="1280" height="730" loading="lazy">
+              </a>
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SEÇÃO 8 — UNIDADES DISPONÍVEIS ============ -->
+    <section class="availability" id="disponibilidade" aria-labelledby="avail-title">
+      <div class="availability__inner">
+        <div class="availability__intro">
+          <p class="eyebrow eyebrow--light">Unidades disponíveis · julho de 2026</p>
+          <h2 class="availability__title" id="avail-title">Uma oportunidade<br> para conhecer de perto</h2>
+          <p class="availability__lead">Disponibilidade e condições podem ter mudado. Confirme a posição atual diretamente com a incorporadora.</p>
+        </div>
+
+        <div class="units">
+          <div class="unit">
+            <span class="unit__label">Apartamentos tipo</span>
+            <span class="unit__num">14</span>
+            <span class="unit__sub">unidades</span>
+          </div>
+          <div class="unit">
+            <span class="unit__label">Cobertura</span>
+            <span class="unit__num">01</span>
+            <span class="unit__sub">unidade</span>
+          </div>
+          <div class="unit unit--wide progress" style="--p: 80%">
+            <div class="unit__wide-text">
+              <span class="unit__label">Das cotas vendidas</span>
+              <span class="bar" aria-hidden="true"><span></span></span>
+            </div>
+            <span class="unit__big">80<small>%</small></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SEÇÃO 9 — FLUXO DE APORTES ============ -->
+    <section class="flow" id="investimento" aria-labelledby="flow-title">
+      <div class="flow__inner">
+        <div class="flow__intro">
+          <p class="eyebrow">Informações de investimento</p>
+          <h2 class="flow__title" id="flow-title">Fluxo de aportes</h2>
+          <p class="flow__lead">Valores de 2026, em 48 meses: 44 parcelas mensais e 4 balões anuais.</p>
+        </div>
+
+        <div class="flow__tables" data-active="tipo">
+          <div class="flow__tabs" role="tablist" aria-label="Escolha a tipologia">
+            <button class="flow__tab" type="button" role="tab" id="tab-tipo" aria-controls="flow-tipo" aria-selected="true" data-tab="tipo">Apto tipo <small>182 m²</small></button>
+            <button class="flow__tab" type="button" role="tab" id="tab-duplex" aria-controls="flow-duplex" aria-selected="false" data-tab="duplex">Cobertura duplex <small>364 m²</small></button>
+          </div>
+          <div class="flow__grid">
+            <div class="flow-table flow-table--tipo" id="flow-tipo" role="tabpanel" aria-labelledby="tab-tipo">
+              <div class="flow-table__head">
+                <p class="flow-table__kicker">Fluxo de aportes</p>
+                <h3 class="flow-table__name">Apto tipo <span>· 182 m²</span></h3>
+              </div>
+              <table>
+                <caption class="visually-hidden">Fluxo de aportes do apartamento tipo de 182 m²</caption>
+                <thead><tr><th scope="col">Período</th><th scope="col">Valor</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Parcelas 1 a 6</th><td>R$ 9.537,00</td></tr>
+                  <tr><th scope="row">Parcelas 7 a 11</th><td>R$ 11.781,00</td></tr>
+                  <tr><th scope="row">Parcelas 13 a 18</th><td>R$ 15.708,00</td></tr>
+                  <tr><th scope="row">Parcelas 19 a 23</th><td>R$ 19.074,00</td></tr>
+                  <tr><th scope="row">Parcelas 25 a 30</th><td>R$ 21.318,00</td></tr>
+                  <tr><th scope="row">Parcelas 31 a 35</th><td>R$ 24.684,00</td></tr>
+                  <tr><th scope="row">Parcelas 37 a 42</th><td>R$ 26.367,00</td></tr>
+                  <tr><th scope="row">Parcelas 43 a 47</th><td>R$ 28.050,00</td></tr>
+                  <tr><th scope="row">Balões (12, 24, 36 e 48)</th><td>R$ 33.660,00</td></tr>
+                </tbody>
+                <tfoot><tr><th scope="row">Total</th><td>R$ 990.165,00</td></tr></tfoot>
+              </table>
+            </div>
+            <div class="flow-table flow-table--duplex" id="flow-duplex" role="tabpanel" aria-labelledby="tab-duplex">
+              <div class="flow-table__head">
+                <p class="flow-table__kicker">Fluxo de aportes</p>
+                <h3 class="flow-table__name">Cobertura <span>· 364 m²</span></h3>
+              </div>
+              <table>
+                <caption class="visually-hidden">Fluxo de aportes do cobertura duplex de 364 m²</caption>
+                <thead><tr><th scope="col">Período</th><th scope="col">Valor</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Parcelas 1 a 6</th><td>R$ 19.040,00</td></tr>
+                  <tr><th scope="row">Parcelas 7 a 11</th><td>R$ 23.520,00</td></tr>
+                  <tr><th scope="row">Parcelas 13 a 18</th><td>R$ 31.360,00</td></tr>
+                  <tr><th scope="row">Parcelas 19 a 23</th><td>R$ 38.080,00</td></tr>
+                  <tr><th scope="row">Parcelas 25 a 30</th><td>R$ 42.560,00</td></tr>
+                  <tr><th scope="row">Parcelas 31 a 35</th><td>R$ 49.280,00</td></tr>
+                  <tr><th scope="row">Parcelas 37 a 42</th><td>R$ 52.640,00</td></tr>
+                  <tr><th scope="row">Parcelas 43 a 47</th><td>R$ 56.000,00</td></tr>
+                  <tr><th scope="row">Balões (12, 24, 36 e 48)</th><td>R$ 65.000,00</td></tr>
+                </tbody>
+                <tfoot><tr><th scope="row">Total</th><td>R$ 1.968.000,00</td></tr></tfoot>
+              </table>
+            </div>
+          </div>
+          <p class="flow__note">Os intervalos e valores são apresentados como constam no material de 2026. Confirme com a incorporadora os dados vigentes e os documentos do empreendimento antes de qualquer decisão.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SEÇÃO 10 — MODELO DE NEGÓCIO (cartões empilhados) ============ -->
+    <section class="model" id="modelo" aria-labelledby="model-title">
+      <div class="model__inner">
+        <div class="model__intro">
+          <p class="eyebrow">Modelo de negócio</p>
+          <h2 class="model__title" id="model-title">Construção a preço de custo</h2>
+          <p class="model__lead">O investidor financia a obra diretamente, sem a margem de lucro de uma incorporadora.</p>
+        </div>
+
+        <ol class="model__stack" aria-label="Vantagens do modelo a preço de custo">
+          <li class="stack-card" style="--i: 0">
+            <span class="stack-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 17 10 11l4 4 6-7M15 8h5v5"/></svg></span>
+            <div class="stack-card__body">
+              <h3 class="stack-card__title">Economia real</h3>
+              <p class="stack-card__big">20—40<small>%</small> <span>abaixo do preço de mercado</span></p>
+              <p class="stack-card__text">Imóvel adquirido abaixo do preço final de mercado, sem a margem de lucro de uma incorporadora tradicional.</p>
+            </div>
+            <span class="stack-card__num" aria-hidden="true">01</span>
+          </li>
+          <li class="stack-card" style="--i: 1">
+            <span class="stack-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2.5 12S6 5 12 5s9.5 7 9.5 7-3.5 7-9.5 7-9.5-7-9.5-7z"/><circle cx="12" cy="12" r="3"/></svg></span>
+            <div class="stack-card__body">
+              <h3 class="stack-card__title">Transparência</h3>
+              <p class="stack-card__text">Fluxo de caixa e custos da obra abertos e auditados pela empresa e pela comissão dos investidores.</p>
+            </div>
+            <span class="stack-card__num" aria-hidden="true">02</span>
+          </li>
+          <li class="stack-card" style="--i: 2">
+            <span class="stack-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 4 7v5c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V7z"/><path d="m9 12 2 2 4-4"/></svg></span>
+            <div class="stack-card__body">
+              <h3 class="stack-card__title">Potencial patrimonial</h3>
+              <p class="stack-card__text">A apresentação aponta potencial de ganho desde a planta, sujeito aos custos e às condições do empreendimento.</p>
+            </div>
+            <span class="stack-card__num" aria-hidden="true">03</span>
+          </li>
+          <li class="stack-card" style="--i: 3">
+            <span class="stack-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 20h18M6 16v-4M11 16V8M16 16v-6M20 16V5"/></svg></span>
+            <div class="stack-card__body">
+              <h3 class="stack-card__title">Valorização pós-entrega</h3>
+              <p class="stack-card__big">30—50<small>%</small> <span>estimativa da apresentação</span></p>
+              <p class="stack-card__text">Valorização média pós-entrega indicada sobre o valor total investido. É uma estimativa do material, não uma garantia de retorno.</p>
+            </div>
+            <span class="stack-card__num" aria-hidden="true">04</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ SEÇÃO 11 — COMO FUNCIONA (passo a passo) ============ -->
+    <section class="how" id="como-funciona" aria-labelledby="how-title">
+      <div class="how__inner">
+        <div class="how__head">
+          <div>
+            <p class="eyebrow">Como funciona</p>
+            <h2 class="how__title" id="how-title">Da ideia às chaves</h2>
+            <p class="how__lead">O passo a passo do investimento a preço de custo descrito na apresentação.</p>
+          </div>
+        </div>
+
+        <ol class="steps" aria-label="Etapas do investimento a preço de custo">
+          <li class="step">
+            <span class="step__num">01</span>
+            <div class="step__body">
+              <h3 class="step__title">Aquisição do terreno</h3>
+              <p class="step__text">Compra do local onde o empreendimento será erguido.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">02</span>
+            <div class="step__body">
+              <h3 class="step__title">Formação do grupo</h3>
+              <p class="step__text">Investidores se unem em um condomínio fechado para cotizar o projeto.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">03</span>
+            <div class="step__body">
+              <h3 class="step__title">Aprovação e projetos</h3>
+              <p class="step__text">Desenvolvimento e validação da planta e das licenças legais.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">04</span>
+            <div class="step__body">
+              <h3 class="step__title">Aportes</h3>
+              <p class="step__text">Parcelas mensais e balões anuais que cobrem o custo real da construção.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">05</span>
+            <div class="step__body">
+              <h3 class="step__title">Entrega das chaves</h3>
+              <p class="step__text">Divisão das unidades e realização do lucro, por venda ou locação.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ SEÇÃO 12 — OURINHOS ============ -->
+    <section class="city" id="ourinhos" aria-labelledby="city-title">
+      <div class="city__inner">
+        <div class="city__text">
+          <p class="eyebrow">Ourinhos · SP</p>
+          <h2 class="city__title" id="city-title">Uma cidade<br> com força regional</h2>
+          <p class="city__label">Polo educacional</p>
+          <p class="city__lead">UNESP, FATEC e Estácio estão entre as instituições que atraem estudantes e movimentam locação, comércio e serviços.</p>
+        </div>
+
+        <div class="city__reel" role="img" aria-label="Voo sobre Ourinhos que termina no bairro Nova Ourinhos, onde fica o Residencial Veneza">
+          <img class="city__frame city__frame--1" src="img/ourinhos-aerea.jpg" alt="" width="1440" height="809" loading="lazy">
+          <div class="city__frame city__frame--2">
+            <img src="img/ourinhos-bairro.jpg" alt="" width="849" height="604" loading="lazy">
+            <!-- Marcação do terreno (recriada do PDF): círculo + ponto + linha até a etiqueta -->
+            <svg class="city__mark" viewBox="0 0 849 604" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <circle class="city__mark-ring" cx="595" cy="211" r="104"/>
+              <circle class="city__mark-pulse" cx="590" cy="240" r="9"/>
+              <circle class="city__mark-dot" cx="590" cy="240" r="7"/>
+              <path class="city__mark-line" d="M523 285 L478 334 H452"/>
+              <g class="city__mark-label">
+                <rect x="258" y="314" width="194" height="40"/>
+                <text x="355" y="340" text-anchor="middle">Residencial Veneza</text>
+              </g>
+            </svg>
+          </div>
+          <span class="city__tag city__tag--1" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Ourinhos · SP</span>
+          <span class="city__tag city__tag--2" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Nova Ourinhos</span>
+        </div>
+
+        <dl class="city__stats">
+          <div class="city__stat">
+            <dt>População</dt>
+            <dd class="city__value"><span data-count="103970">103.970</span></dd>
+            <dd class="city__source">Censo IBGE 2022</dd>
+          </div>
+          <div class="city__stat">
+            <dt>IDH-M</dt>
+            <dd class="city__value"><span data-count="0.778" data-decimals="3">0,778</span></dd>
+            <dd class="city__source">Desenvolvimento alto, segundo o PNUD</dd>
+          </div>
+          <div class="city__stat">
+            <dt>Influência regional</dt>
+            <dd class="city__value"><span data-count="20" data-prefix="+">+20</span> <small>municípios</small></dd>
+            <dd class="city__source">Incluindo o norte do Paraná</dd>
+          </div>
+          <div class="city__stat">
+            <dt>Localização</dt>
+            <dd class="city__value city__value--text">Nova Ourinhos</dd>
+            <dd class="city__source">Bairro mais valorizado de Ourinhos</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ SEÇÃO 13 — CHAMADO FINAL ============ -->
+    <section class="cta" id="contato" aria-labelledby="cta-title">
+      <img class="cta__mark" src="img/logo-v-lg.png" alt="" aria-hidden="true" width="276" height="240" loading="lazy">
+      <div class="cta__inner">
+        <p class="eyebrow eyebrow--light">Próximo passo</p>
+        <h2 class="cta__title" id="cta-title">Vamos conversar sobre o <em>Veneza</em>?</h2>
+        <div class="cta__side">
+          <p class="cta__text">Fale diretamente com a incorporadora para confirmar disponibilidade, valores e condições atualizados.</p>
+          <a class="btn btn--gold cta__btn" href="https://wa.me/5511996948833?text=Ol%C3%A1%2C%20gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20investimentos%20em%20im%C3%B3veis%20na%20planta" target="_blank" rel="noopener">
+            <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3zm4.6 12.6c-.2.6-1.1 1.1-1.6 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-3.9-.1-.2-1-1.4-1-2.7s.7-1.9.9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg> Falar no WhatsApp <span class="btn__icon" aria-hidden="true">→</span>
+          </a>
+        </div>
       </div>
     </section>
 
   </main>
 
-  <!-- ============ FOOTER ============ -->
+  <!-- ============ RODAPÉ ============ -->
   <footer class="footer">
-    <div class="footer__container">
-
-      <div class="footer__contact">
-        <p class="footer__contact-name">Veneza | Cotas de Investimento e Rentabilidade</p>
-        <p class="footer__contact-title">CONTATO</p>
-
-        <a class="footer__whatsapp-badge"
-           href="https://wa.me/5511996948833?text=Ol%C3%A1%2C%20gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20investimentos%20em%20im%C3%B3veis%20na%20planta"
-           target="_blank" rel="noopener"
-           aria-label="Falar no WhatsApp: (11) 99694-8833">
-          <img class="footer__whatsapp-icon" src="img/whatsapp.svg" alt="" width="24" height="24" loading="lazy" decoding="async">
-          <span class="footer__whatsapp-number">(11) 99694-8833</span>
-        </a>
-      </div>
-
-      <div class="footer__brand-group">
-        <div class="footer__brand">
-          <img class="footer__logo" src="img/footer__logo.svg" alt="Veneza Incorporadora e Construtora" width="489" height="640" loading="lazy" decoding="async">
+    <div class="footer__inner">
+      <div class="footer__cols">
+        <div class="footer__col">
+          <p class="footer__head">Contato</p>
+          <a class="footer__card" href="https://wa.me/5511996948833?text=Ol%C3%A1%2C%20gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20investimentos%20em%20im%C3%B3veis%20na%20planta" target="_blank" rel="noopener">
+            <span>
+              <small>WhatsApp da Veneza</small>
+              <span class="footer__card-num"><svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3zm4.6 12.6c-.2.6-1.1 1.1-1.6 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-3.9-.1-.2-1-1.4-1-2.7s.7-1.9.9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg>(11) 9 9694-8833</span>
+            </span>
+            <span class="footer__card-arrow" aria-hidden="true">›</span>
+          </a>
         </div>
 
-        <button type="button" class="footer__top" aria-label="Voltar ao topo da página">
-          <span class="footer__top-label">VOLTAR AO TOPO</span>
-          <svg class="footer__top-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M12 19V5M12 5l-6 6M12 5l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </button>
-      </div>
+        <div class="footer__col">
+          <p class="footer__head">Empreendimentos</p>
+          <ul class="footer__links">
+            <li><a href="#portfolio">Todos os empreendimentos</a></li>
+            <li><a href="#residencial">Residencial Veneza</a></li>
+            <li><a href="#portfolio">Ed. Monte Carlo</a></li>
+            <li><a href="#portfolio">Ed. Florença</a></li>
+            <li><a href="#portfolio">Ed. Villa Di Capri</a></li>
+            <li><a href="#portfolio">Ed. Toscana</a></li>
+          </ul>
+        </div>
 
-      <div class="footer__legal">
-        <p class="footer__legal-text">Veneza Incorporadora e Construtora 2026 – Todos os direitos reservados.</p>
-        <div class="footer__legal-links">
-          <a class="footer__legal-link" href="termos.html" target="_blank" rel="noopener">Política de Privacidade</a>
-          <a class="footer__legal-link" href="termos.html" target="_blank" rel="noopener">Termos de Uso</a>
+        <div class="footer__col">
+          <p class="footer__head">Residencial Veneza</p>
+          <address class="footer__address">Av. Jairo C. Custódio, 745<br>Nova Ourinhos, Ourinhos – SP</address>
+          <a class="footer__map" href="https://www.google.com/maps/search/?api=1&amp;query=Av.%20Jairo%20C.%20Cust%C3%B3dio%2C%20745%2C%20Nova%20Ourinhos%2C%20Ourinhos%20-%20SP" target="_blank" rel="noopener">Abrir no Google Maps <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="footer__col">
+          <p class="footer__head">Institucional</p>
+          <ul class="footer__links">
+            <li><a href="#a-veneza">Nossa história</a></li>
+            <li><a href="#investimento">Fluxo de aportes</a></li>
+            <li><a href="#modelo">Construção a preço de custo</a></li>
+            <li><a href="#ourinhos">Ourinhos</a></li>
+          </ul>
         </div>
       </div>
 
+      <img class="footer__wordmark" src="img/logo-veneza-xl.png" alt="Veneza" width="1910" height="280" loading="lazy">
+
+      <div class="footer__bottom">
+        <div>
+          <p>Veneza Incorporadora e Construtora · Ourinhos/SP · desde 2009. Todos os direitos reservados.</p>
+          <p class="footer__legal"><a href="termos.html">Política de Privacidade</a><a href="termos.html">Termos de Uso</a></p>
+        </div>
+        <a class="footer__top" href="#topo">Voltar ao topo <span aria-hidden="true">↑</span></a>
+      </div>
     </div>
   </footer>
+
+  <!-- Botão flutuante de WhatsApp -->
+  <a class="whatsapp-float" href="https://wa.me/5511996948833?text=Ol%C3%A1%2C%20gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20investimentos%20em%20im%C3%B3veis%20na%20planta" target="_blank" rel="noopener" aria-label="Falar com a Veneza pelo WhatsApp">
+    WhatsApp <span class="btn__icon" aria-hidden="true">↗</span>
+  </a>
 
   <script src="script.js"></script>
 </body>
