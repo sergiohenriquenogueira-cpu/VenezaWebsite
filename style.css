@@ -16,6 +16,8 @@
   --dourado:        #D4B343;  /* gold */
   --dourado-claro:  #ECD889;  /* gold-light — palavra destacada no título ("Ourinhos") */
   --dourado-escuro: #D4B343;
+  --dourado-texto:  #9C7E22;  /* dourado para números grandes sobre fundo claro (contraste ≥ 3:1) */
+  --dourado-texto-sm: #86691A; /* dourado para texto pequeno sobre fundo claro (contraste ≥ 4,5:1) */
   --dourado-hover:  #ECD889;  /* botões ao passar o mouse */
 
   /* Fundos claros */
@@ -27,14 +29,15 @@
 
   /* Textos */
   --texto-titulo: #1A2A20;
-  --texto-corpo:  #6E7770;
+  --texto-corpo:  #5E6761;  /* antes #6E7770 — escurecido para contraste mínimo 4,5:1 nos fundos bege */
   --texto-claro:  #FFFFFF;
 
   /* Fontes */
   --fonte-titulo: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
   --fonte-texto:  'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --peso-titulo:  600;
-  --fs-titulo-secao: clamp(42px, 5.8vw, 78px);  /* títulos de seção: 78px no desktop */  /* Semibold — padrão de todos os títulos de seção */
+  --fs-titulo-secao: clamp(42px, 5.8vw, 78px);  /* seções principais: 78px no desktop */
+  --fs-titulo-apoio: clamp(36px, 4.4vw, 60px);  /* seções de apoio: 60px no desktop */  /* Semibold — padrão de todos os títulos de seção */
 
   /* Arredondamento: suave e consistente em todo o site */
   --raio-sm: 2px;   /* botões, etiquetas, filtros, abas */
@@ -184,9 +187,9 @@ p { margin: 0; }
 }
 .header__logo { width: auto; height: 18px; }
 .header__brand-sub {
-  font-size: 7.5px;
+  font-size: 9.5px;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   white-space: nowrap;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.75);
@@ -359,7 +362,7 @@ p { margin: 0; }
 }
 .stats__title {
   margin-top: 18px;
-  font-size: var(--fs-titulo-secao);
+  font-size: var(--fs-titulo-apoio);
   font-weight: var(--peso-titulo);
 }
 .stats__aside {
@@ -501,7 +504,7 @@ p { margin: 0; }
 .history__content { max-width: 580px; }
 .history__title {
   margin-top: 26px;
-  font-size: var(--fs-titulo-secao);
+  font-size: var(--fs-titulo-apoio);
   font-weight: var(--peso-titulo);
   line-height: 0.98;
 }
@@ -547,7 +550,7 @@ p { margin: 0; }
 .portfolio__intro { max-width: 640px; }
 .portfolio__title {
   margin-top: 26px;
-  font-size: var(--fs-titulo-secao);
+  font-size: var(--fs-titulo-apoio);
   font-weight: var(--peso-titulo);
   line-height: 0.98;
   color: var(--texto-claro);
@@ -975,7 +978,7 @@ p { margin: 0; }
 }
 .leisure__title {
   margin-top: 26px;
-  font-size: var(--fs-titulo-secao);
+  font-size: var(--fs-titulo-apoio);
   font-weight: var(--peso-titulo);
   line-height: 1;
   color: var(--texto-claro);
@@ -1022,6 +1025,8 @@ p { margin: 0; }
   color: var(--dourado);
   font-variant-numeric: tabular-nums;
 }
+.leisure__icon { width: 22px; height: 22px; flex-shrink: 0; fill: none; stroke: var(--dourado); stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; transition: transform .3s var(--ease); }
+.leisure__item:hover .leisure__icon { transform: translateY(-2px); }
 .leisure__name { font-size: 14px; font-weight: 600; color: var(--texto-claro); }
 
 @media (max-width: 960px) {
@@ -1036,7 +1041,7 @@ p { margin: 0; }
 /* =========================================================
    SEÇÃO 7 — PLANTAS (acordeão)
    ========================================================= */
-.plans { background: #FFFFFF; }
+.plans { background: var(--branco-quente); }
 .plans__inner {
   max-width: calc(var(--wrap) + 2 * var(--gutter));
   margin-inline: auto;
@@ -1045,10 +1050,8 @@ p { margin: 0; }
   padding-right: max(var(--gutter), env(safe-area-inset-right, 0px));
 }
 .plans__head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px 48px; }
-.plans__title { margin-top: 26px; font-size: var(--fs-titulo-secao); font-weight: var(--peso-titulo); line-height: 1; }
+.plans__title { margin-top: 26px; font-size: var(--fs-titulo-apoio); font-weight: var(--peso-titulo); line-height: 1; }
 .plans__lead { margin-top: 20px; max-width: 52ch; font-size: 15px; }
-.plans__summary { font-size: 13px; line-height: 1.8; text-align: right; }
-.plans__summary strong { color: var(--texto-titulo); }
 
 .plans__list { margin-top: clamp(36px, 4vw, 56px); display: grid; gap: 14px; }
 .plan { background: #FFFFFF; border: 1px solid var(--linha-escura); transition: border-color .3s var(--ease); }
@@ -1136,7 +1139,6 @@ p { margin: 0; }
 .plan__media img { width: 100%; height: auto; }
 
 @media (max-width: 760px) {
-  .plans__summary { text-align: left; }
   .plans__title br { display: none; }
   .plan__body { grid-template-columns: 1fr; }
   .plan__info { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -1160,7 +1162,7 @@ p { margin: 0; }
 }
 .availability__title {
   margin-top: 26px;
-  font-size: var(--fs-titulo-secao);
+  font-size: var(--fs-titulo-apoio);
   font-weight: var(--peso-titulo);
   line-height: 1;
   color: var(--texto-claro);
@@ -1295,7 +1297,7 @@ p { margin: 0; }
 }
 /* Coluna do título fica parada enquanto os cartões passam */
 .model__intro { position: sticky; top: calc(var(--header-h) + 48px); }
-.model__title { margin-top: 26px; font-size: var(--fs-titulo-secao); font-weight: var(--peso-titulo); line-height: 1; }
+.model__title { margin-top: 26px; font-size: var(--fs-titulo-apoio); font-weight: var(--peso-titulo); line-height: 1; }
 .model__lead { margin-top: 22px; max-width: 40ch; font-size: 16px; line-height: 1.75; }
 
 .model__stack { list-style: none; margin: 0; padding: 0 0 8vh; display: grid; gap: 28px; }
@@ -1303,7 +1305,6 @@ p { margin: 0; }
 .stack-card {
   position: sticky;
   top: calc(var(--header-h) + 48px + var(--i) * 18px);
-  min-height: clamp(260px, 30vw, 320px);
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: start;
@@ -1322,7 +1323,7 @@ p { margin: 0; }
   font-size: clamp(52px, 5vw, 72px);
   font-weight: var(--peso-titulo);
   line-height: .95;
-  color: var(--dourado);
+  color: var(--dourado-texto);
   font-variant-numeric: lining-nums;
 }
 .stack-card__big small { font-size: .45em; }
@@ -1337,14 +1338,14 @@ p { margin: 0; }
   color: var(--texto-corpo);
 }
 .stack-card__text { margin-top: 16px; max-width: 46ch; font-size: 15px; line-height: 1.7; }
-.stack-card__num { font-size: 12px; font-weight: 700; color: var(--dourado); font-variant-numeric: tabular-nums; }
+.stack-card__num { font-size: 12px; font-weight: 700; color: var(--dourado-texto-sm); font-variant-numeric: tabular-nums; }
 
 @media (max-width: 900px) {
   .model__inner { grid-template-columns: 1fr; }
   .model__intro { position: static; }
 }
 @media (max-width: 600px) {
-  .stack-card { grid-template-columns: 1fr auto; gap: 18px; min-height: 240px; top: calc(var(--header-h) + 16px + var(--i) * 14px); }
+  .stack-card { grid-template-columns: 1fr auto; gap: 18px; top: calc(var(--header-h) + 16px + var(--i) * 14px); }
   .stack-card__icon { width: 44px; height: 44px; }
   .stack-card__body { grid-column: 1 / -1; grid-row: 2; }
 }
@@ -1364,7 +1365,7 @@ p { margin: 0; }
   padding-right: max(var(--gutter), env(safe-area-inset-right, 0px));
 }
 .how__head { display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; }
-.how__title { margin-top: 26px; font-size: var(--fs-titulo-secao); font-weight: var(--peso-titulo); line-height: 1; }
+.how__title { margin-top: 26px; font-size: var(--fs-titulo-apoio); font-weight: var(--peso-titulo); line-height: 1; }
 .how__lead { margin-top: 20px; max-width: 52ch; font-size: 15px; }
 
 .steps {
@@ -1419,7 +1420,7 @@ p { margin: 0; }
   font-size: clamp(30px, 2.8vw, 40px);
   font-weight: var(--peso-titulo);
   line-height: 1;
-  color: var(--dourado);
+  color: var(--dourado-texto);
   font-variant-numeric: oldstyle-nums;
 }
 .step__title { font-size: clamp(24px, 2.2vw, 30px); font-weight: var(--peso-titulo); line-height: 1.1; transition: transform .3s var(--ease); }
@@ -1440,7 +1441,7 @@ p { margin: 0; }
    Grade de 12 colunas: texto + vista aérea em cima; embaixo, a faixa de
    indicadores vai até onde começa a foto do bairro (que desce sobreposta).
    ========================================================= */
-.city { background: var(--bege-escuro); }
+.city { background: var(--bege); }
 .city__inner {
   max-width: calc(var(--wrap) + 2 * var(--gutter));
   margin-inline: auto;
@@ -1828,7 +1829,7 @@ p { margin: 0; }
   .hero__slide { object-position: 58% 50%; }
   .hero__shade {
     background:
-      linear-gradient(180deg, rgba(15, 26, 20, .6) 0%, rgba(15, 26, 20, .35) 40%, rgba(15, 26, 20, .85) 100%);
+      linear-gradient(180deg, rgba(15, 26, 20, .72) 0%, rgba(15, 26, 20, .62) 45%, rgba(15, 26, 20, .9) 100%);
   }
   .hero__inner { padding-top: calc(var(--header-h) + 40px); padding-bottom: 92px; }
   .hero__title { margin-top: 22px; }
