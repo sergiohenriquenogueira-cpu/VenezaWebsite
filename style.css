@@ -1018,14 +1018,7 @@ p { margin: 0; }
   transition: border-color .3s var(--ease);
 }
 .leisure__item:hover { border-color: var(--dourado); }
-.leisure__num {
-  min-width: 20px;
-  font-size: 11px;
-  font-weight: 700;
-  color: var(--dourado);
-  font-variant-numeric: tabular-nums;
-}
-.leisure__icon { width: 22px; height: 22px; flex-shrink: 0; fill: none; stroke: var(--dourado); stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; transition: transform .3s var(--ease); }
+.leisure__icon { width: 24px; height: 24px; flex-shrink: 0; fill: none; stroke: var(--dourado); stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; transition: transform .3s var(--ease); }
 .leisure__item:hover .leisure__icon { transform: translateY(-2px); }
 .leisure__name { font-size: 14px; font-weight: 600; color: var(--texto-claro); }
 
@@ -1631,6 +1624,20 @@ p { margin: 0; }
 .cta__side { display: grid; gap: 24px; justify-items: start; }
 .cta__text { max-width: 40ch; font-size: 16px; line-height: 1.7; }
 .wa-icon { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
+/* Botões do chamado final: mesma altura e largura, ação principal (WhatsApp) em dourado
+   e ação secundária (material) com contorno — hierarquia clara, sem competir */
+.cta__side { gap: 20px; }
+.cta__actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.cta__actions .btn { min-height: 54px; min-width: 210px; padding: 0 24px; }
+.cta__file { font-size: 12px; color: rgba(255, 255, 255, 0.6); }
+.btn--ghost {
+  color: var(--texto-claro);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
+.btn--ghost:hover { border-color: var(--dourado); color: var(--dourado-claro); background: rgba(255, 255, 255, 0.05); }
+.btn__dl { width: 18px; height: 18px; flex-shrink: 0; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; transition: transform .25s var(--ease); }
+.btn:hover .btn__dl { transform: translateY(2px); }
 
 /* =========================================================
    RODAPÉ
@@ -1700,7 +1707,9 @@ p { margin: 0; }
   .footer__cols { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 600px) {
-  .cta__btn { width: 100%; }
+  .cta__actions { flex-direction: column-reverse; width: 100%; }  /* no celular, WhatsApp (principal) fica em cima */
+  .cta__side { justify-items: stretch; }
+  .cta__actions .btn { width: 100%; }
   .footer__cols { grid-template-columns: 1fr; gap: 32px; }
   .footer__card { max-width: none; }
 }
