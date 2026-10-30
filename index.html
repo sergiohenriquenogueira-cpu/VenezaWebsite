@@ -21,7 +21,7 @@
 </head>
 <body>
 
-  <!-- Menu fixo com efeito de vidro -->
+  <!-- Menu transparente -->
   <header class="header">
     <div class="header__inner">
       <a class="header__brand" href="#" aria-label="Veneza Residencial">
@@ -31,43 +31,35 @@
           <img class="header__sub" src="img/logo-residencial.png" alt="" width="560" height="46">
         </span>
       </a>
-      <a class="btn btn--gold header__wa" href="https://wa.me/5511996948833?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20Residencial%20Veneza" target="_blank" rel="noopener" aria-label="Falar com a Veneza pelo WhatsApp">
+      <a class="btn btn--black header__wa" href="https://wa.me/5511996948833?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20Residencial%20Veneza" target="_blank" rel="noopener" aria-label="Falar com a Veneza pelo WhatsApp">
         <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3zm4.6 12.6c-.2.6-1.1 1.1-1.6 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-3.9-.1-.2-1-1.4-1-2.7s.7-1.9.9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg><span class="header__wa-text">WhatsApp</span>
       </a>
     </div>
   </header>
 
-  <main class="stage">
-    <!-- Vídeo da obra como fundo da tela inteira -->
-    <video class="stage__video" muted loop playsinline preload="none"
-           poster="img/obra-poster.jpg" aria-hidden="true" data-src="video/obra.mp4"></video>
-    <div class="stage__shade" aria-hidden="true"></div>
+  <main>
+    <!-- HERO: título no alto, vídeo da obra dissolvendo no fundo claro -->
+    <section class="hero" aria-labelledby="hero-title">
+      <video class="hero__video stage__video" muted loop playsinline preload="none"
+             poster="img/obra-poster.jpg" aria-hidden="true" data-src="video/obra.mp4"></video>
+      <div class="hero__shade" aria-hidden="true"></div>
+      <div class="hero__text">
+        <h1 class="hero__title" id="hero-title">Um novo marco<br> para <em>Ourinhos</em></h1>
+        <p class="hero__lead"><span class="hero__dot" aria-hidden="true"></span>Obras em andamento · Nova Ourinhos</p>
+        <a class="btn btn--black hero__cta" href="https://wa.me/5511996948833?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20Residencial%20Veneza" target="_blank" rel="noopener"><svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3zm4.6 12.6c-.2.6-1.1 1.1-1.6 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-3.9-.1-.2-1-1.4-1-2.7s.7-1.9.9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg> Falar no WhatsApp</a>
+      </div>
+    </section>
 
-    <div class="stage__inner">
-      <h1 class="visually-hidden">Residencial Veneza, da Veneza Incorporadora e Construtora</h1>
-
-      <p class="status">
-        <span class="status__dot" aria-hidden="true"></span>
-        Obras em andamento <span class="status__sep" aria-hidden="true">·</span> Nova Ourinhos
-      </p>
-
-      <section class="contact" aria-labelledby="contact-title">
-        <p class="contact__label" id="contact-title">Fale com a Veneza</p>
-        <p class="contact__phone">(11) 9 9694-8833</p>
-        <div class="contact__actions">
-          <a class="btn btn--gold" href="https://wa.me/5511996948833?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20Residencial%20Veneza" target="_blank" rel="noopener">
-            <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3zm4.6 12.6c-.2.6-1.1 1.1-1.6 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-3.9-.1-.2-1-1.4-1-2.7s.7-1.9.9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg>
-            WhatsApp
-          </a>
-          <a class="btn btn--ghost" href="tel:+5511996948833">
-            <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path class="line" d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
-            Ligar
-          </a>
-        </div>
-      </section>
-
-      <footer class="foot">Veneza Incorporadora e Construtora · Ourinhos/SP · desde 2009</footer>
-    </div>
+    <!-- CONTATO -->
+    <section class="contact" id="contato" aria-labelledby="contact-title">
+      <p class="contact__label" id="contact-title">Fale com a Veneza</p>
+      <p class="contact__phone">(11) 9 9694-8833</p>
+      <div class="contact__actions">
+        <a class="btn btn--black" href="https://wa.me/5511996948833?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20Residencial%20Veneza" target="_blank" rel="noopener"><svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3zm4.6 12.6c-.2.6-1.1 1.1-1.6 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-3.9-.1-.2-1-1.4-1-2.7s.7-1.9.9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg> WhatsApp</a>
+        <a class="btn btn--line" href="tel:+5511996948833"><svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path class="line" d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg> Ligar</a>
+      </div>
+      <p class="foot">Veneza Incorporadora e Construtora · Ourinhos/SP · desde 2009</p>
+    </section>
   </main>
 
   <script src="script.js"></script>
