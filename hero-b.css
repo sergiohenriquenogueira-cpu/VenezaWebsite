@@ -1,0 +1,160 @@
+/* =========================================================
+   VENEZA v3 — TESTE DE HERO (referência "Stayli"):
+   título no alto, vídeo da obra se dissolvendo no fundo claro,
+   contato logo abaixo. Pensado primeiro para o celular.
+   ========================================================= */
+:root {
+  --verde-900: #0F1A14;
+  --verde-700: #1A2922;
+  --dourado: #D4B343;
+  --dourado-claro: #ECD889;
+  --dourado-texto: #9C7E22;
+  --fundo: #FFFEFA;        /* branco-quente das versões anteriores */
+  --texto-titulo: #1A2A20;
+  --texto-corpo: #5E6761;
+  --fonte-titulo: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --fonte-texto: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --raio: 2px;
+  --header-h: 64px;
+  --ease: cubic-bezier(.22, .61, .36, 1);
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--fundo); color: var(--texto-corpo); font-family: var(--fonte-texto); -webkit-font-smoothing: antialiased; }
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+:focus-visible { outline: 2px solid var(--dourado); outline-offset: 3px; }
+
+/* ---------- Menu de vidro (fica sólido ao chegar no fundo claro) ---------- */
+.header {
+  position: fixed; inset: 0 0 auto 0; z-index: 10;
+  padding-top: env(safe-area-inset-top, 0px);
+  background: rgba(255, 255, 255, 0.06);
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  transition: background-color .35s var(--ease), border-color .35s var(--ease);
+}
+.header.is-solid { background: rgba(15, 26, 20, 0.88); border-color: transparent; }
+.header__inner {
+  max-width: 1240px; height: var(--header-h); margin-inline: auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.header__brand { display: flex; align-items: center; gap: 9px; min-height: 44px; }
+.header__mark { width: auto; height: 32px; }
+.header__brand-text { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
+.header__logo { width: auto; height: 15px; }
+.header__sub { width: auto; height: 7px; }
+
+/* ---------- Botões ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  min-height: 52px; padding: 0 22px;
+  font-family: var(--fonte-texto); font-size: 15px; font-weight: 700;
+  border-radius: var(--raio);
+  transition: background-color .25s var(--ease), border-color .25s var(--ease), color .25s var(--ease), transform .2s var(--ease);
+}
+.btn:active { transform: scale(.98); }
+.btn--gold { background: var(--dourado); color: var(--verde-700); }
+.btn--gold:hover { background: var(--dourado-claro); }
+.btn--dark { background: var(--verde-700); color: #FFFFFF; }
+.btn--dark:hover { background: var(--verde-900); }
+.btn--line { border: 1px solid rgba(26, 42, 32, .35); color: var(--texto-titulo); }
+.btn--line:hover { border-color: var(--verde-700); }
+.btn__icon { width: 20px; height: 20px; flex-shrink: 0; }
+.btn__icon .fill { fill: currentColor; }
+.btn__icon .line { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; }
+.header__wa { min-height: 42px; padding: 0 14px; font-size: 13px; gap: 8px; }
+.header__wa .btn__icon { width: 18px; height: 18px; }
+
+/* ---------- HERO ---------- */
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--verde-700) url("img/obra-poster.jpg") center / cover no-repeat;
+}
+.hero__video { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; }
+/* Escuro suave no alto (para o título) e dissolve no fundo claro embaixo */
+.hero__shade {
+  position: absolute; inset: 0; z-index: -1;
+  background:
+    linear-gradient(180deg,
+      rgba(15, 26, 20, .62) 0%,
+      rgba(15, 26, 20, .30) 30%,
+      rgba(15, 26, 20, 0) 52%,
+      rgba(255, 254, 250, 0) 70%,
+      rgba(255, 254, 250, .85) 90%,
+      var(--fundo) 100%);
+}
+.hero__text {
+  width: 100%;
+  max-width: 720px;
+  padding: calc(var(--header-h) + env(safe-area-inset-top, 0px) + 40px) 24px 0;
+  text-align: center;
+  color: #FFFFFF;
+}
+.hero__eyebrow {
+  margin: 0;
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+}
+.hero__dot { position: relative; width: 8px; height: 8px; border-radius: 50%; background: var(--dourado); }
+.hero__dot::after { content: ""; position: absolute; inset: 0; border-radius: 50%; background: var(--dourado); animation: pulse 1.8s ease-out infinite; }
+@keyframes pulse { from { opacity: .7; transform: scale(1); } to { opacity: 0; transform: scale(2.8); } }
+.hero__title {
+  margin: 16px 0 0;
+  font-family: var(--fonte-titulo);
+  font-size: clamp(44px, 12vw, 84px);
+  font-weight: 600;
+  line-height: .98;
+  letter-spacing: -.01em;
+  text-wrap: balance;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, .25);
+}
+.hero__title em { font-style: normal; color: var(--dourado-claro); }
+.hero__lead { margin: 16px auto 0; max-width: 34ch; font-size: 15px; line-height: 1.65; color: rgba(255, 255, 255, .92); text-shadow: 0 1px 12px rgba(0, 0, 0, .45); }
+.hero__cta { margin-top: 24px; }
+
+/* ---------- CONTATO (fundo claro, logo abaixo do vídeo) ---------- */
+.contact {
+  max-width: 640px;
+  margin: -40px auto 0;  /* sobe um pouco sobre o fim do degradê */
+  padding: 0 24px calc(48px + env(safe-area-inset-bottom, 0px));
+  position: relative;
+  text-align: center;
+}
+.contact__label { margin: 0; font-size: 11px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--dourado-texto); }
+.contact__phone {
+  margin: 10px 0 0;
+  font-family: var(--fonte-titulo); font-size: clamp(40px, 11vw, 60px); font-weight: 600; line-height: 1;
+  color: var(--texto-titulo); white-space: nowrap; font-variant-numeric: lining-nums; user-select: all;
+}
+.contact__actions { margin: 24px auto 0; max-width: 420px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.foot { margin-top: 36px; font-size: 12px; line-height: 1.5; }
+
+/* ---------- Computador ---------- */
+@media (min-width: 900px) {
+  :root { --header-h: 80px; }
+  .header__inner { padding-left: 48px; padding-right: 48px; }
+  .header__mark { height: 40px; }
+  .header__logo { height: 19px; }
+  .header__sub { height: 9px; }
+  .header__brand-text { gap: 8px; }
+  .header__wa { min-height: 44px; padding: 0 18px; }
+  .hero { min-height: min(100svh, 920px); }
+  .hero__text { padding-top: calc(var(--header-h) + 72px); }
+  .hero__lead { font-size: 17px; }
+}
+@media (max-width: 340px) {
+  .header__wa-text { display: none; }
+  .header__wa { width: 44px; padding: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .hero__dot::after { animation: none; }
+}

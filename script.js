@@ -20,3 +20,15 @@
     if (document.hidden) video.pause(); else play();
   });
 })();
+
+/* Menu: fica sólido quando a página sai do vídeo (usado na página de teste da hero) */
+(function () {
+  var header = document.querySelector('.header');
+  var hero = document.querySelector('.hero');
+  if (!header || !hero) return;
+  var onScroll = function () {
+    header.classList.toggle('is-solid', window.scrollY > hero.offsetHeight - 160);
+  };
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+})();
